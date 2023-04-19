@@ -16,16 +16,16 @@ import sys
 def gradingStudents(grades):
     # Write your code here
     result = []
-    for i in range(len(grades)):
+    for j in range(len(grades)):
         if grades[i]<38:
-            result.append(grades[i])
+            result.append(grades[j])
         else:
-            if (grades[i]+1)%5==0:
-                result.append(grades[i]+1)
-            elif (grades[i]+2)%5==0:
-                result.append(grades[i]+2)
+            if (grades[j]+1)%5==0:
+                result.append(grades[j]+1)
+            elif (grades[j]+2)%5==0:
+                result.append(grades[j]+2)
             else:
-                result.append(grades[i])
+                result.append(grades[j])
     return result
                 
             
